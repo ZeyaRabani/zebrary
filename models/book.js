@@ -40,6 +40,6 @@ const bookSchema = new mongoose.Schema({
           return path.join('/', coverImageBasePath, this.coverImageName)
         }
 })
-
+    
 module.exports = mongoose.model('Book', bookSchema)
 module.exports.coverImageBasePath = coverImageBasePath
